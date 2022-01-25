@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Deriv Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Deriv Calculator</h1>
+        </div>
+        <div class="content-container">
+            <div class="select-index">
+                <select name="index" id="select-index">
+                    <option value="vix10">Volatility Index 10</option>
+                    <option value="vix25">Volatility Index 25</option>
+                    <option value="vix50">Volatility Index 50</option>
+                    <option value="vix75">Volatility Index 75</option>
+                    <option value="vix100">Volatility Index 100</option>
+                    <option value="vix10(1s)">Volatility 10(1s) Index</option>
+                    <option value="vix25(1s)">Volatility 25(1s) Index</option>
+                    <option value="vix50(1s)">Volatility 50(1s) Index</option>
+                    <option value="vix75(1s)">Volatility 75(1s) Index</option>
+                    <option value="vix100(1s)">Volatility 100(1s) Index</option>
+                </select>
+            </div>
+            <div class="price-input">
+                <label for="price-open">Price Open</label>
+                <input type="number" name="price-open" id="price-open" placeholder="Enter Price Open">
+            </div>
+            <div class="price-input">
+                <label for="price-close">Price Close</label>
+                <input type="number" name="price-close" id="price-close" placeholder="Enter Price Close">
+            </div>
+            <div class="price-input">
+                <label for="lot-size">Lot Size</label>
+                <input type="number" name="lot-size" id="lot-size" placeholder="Enter Price Open">
+            </div>
+            <div class="price-input">
+                <button id="calc-btn">Calculate</button>
+            </div>
+        </div>
+
+        <div id="pip-number">
+            <h3>Number of Pips: <span id="pip-num">0</span></h3>
+        </div>
+
+        <div class="result">
+            <h3>Profit/Loss: <span id="result">0</span></h3>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
